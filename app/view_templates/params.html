@@ -1,0 +1,20 @@
+<html lang="en">
+    <head>
+        {% include "/partials/head.html" ignore missing with context%}
+
+        <title>Parameters</title>
+    </head>
+
+    <body>
+        {% include "/partials/nav.html" ignore missing with context%}
+
+        <h1>Wlcome {{ name }}</h1>
+
+        {% if name == "" %}
+        <h4>Try changing the Url to /params?name=your name</h4>
+        {% endif %}
+
+
+        {% include "./partials/dependencies.html" ignore missing with context %}
+    </body>
+</html>
